@@ -13,6 +13,7 @@
 		EF411C7E1B91D81500E14173 /* YVGoogleImageLoadingService.m in Sources */ = {isa = PBXBuildFile; fileRef = EF411C7D1B91D81500E14173 /* YVGoogleImageLoadingService.m */; };
 		EF411C851B91DC6400E14173 /* YVConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = EF411C841B91DC6400E14173 /* YVConstants.m */; };
 		EF411C891B91DCD000E14173 /* NSDictionary+ContainsKey.m in Sources */ = {isa = PBXBuildFile; fileRef = EF411C881B91DCD000E14173 /* NSDictionary+ContainsKey.m */; };
+		EF411C8C1B91DE0E00E14173 /* YVGoogleImageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EF411C8B1B91DE0E00E14173 /* YVGoogleImageModel.m */; };
 		EFC029531B91CBD40029B671 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EFC029521B91CBD40029B671 /* main.m */; };
 		EFC029561B91CBD40029B671 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EFC029551B91CBD40029B671 /* AppDelegate.m */; };
 		EFC0295E1B91CBD50029B671 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFC0295D1B91CBD50029B671 /* Images.xcassets */; };
@@ -46,6 +47,8 @@
 		EF411C841B91DC6400E14173 /* YVConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YVConstants.m; sourceTree = "<group>"; };
 		EF411C871B91DCD000E14173 /* NSDictionary+ContainsKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+ContainsKey.h"; sourceTree = "<group>"; };
 		EF411C881B91DCD000E14173 /* NSDictionary+ContainsKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+ContainsKey.m"; sourceTree = "<group>"; };
+		EF411C8A1B91DE0E00E14173 /* YVGoogleImageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YVGoogleImageModel.h; sourceTree = "<group>"; };
+		EF411C8B1B91DE0E00E14173 /* YVGoogleImageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YVGoogleImageModel.m; sourceTree = "<group>"; };
 		EFC0294D1B91CBD40029B671 /* GoogleImageTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoogleImageTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFC029511B91CBD40029B671 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EFC029521B91CBD40029B671 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -129,6 +132,8 @@
 		EF411C821B91DC0C00E14173 /* Objects */ = {
 			isa = PBXGroup;
 			children = (
+				EF411C8A1B91DE0E00E14173 /* YVGoogleImageModel.h */,
+				EF411C8B1B91DE0E00E14173 /* YVGoogleImageModel.m */,
 			);
 			name = Objects;
 			sourceTree = "<group>";
@@ -387,6 +392,7 @@
 				EF411C891B91DCD000E14173 /* NSDictionary+ContainsKey.m in Sources */,
 				EF411C7E1B91D81500E14173 /* YVGoogleImageLoadingService.m in Sources */,
 				EFC029531B91CBD40029B671 /* main.m in Sources */,
+				EF411C8C1B91DE0E00E14173 /* YVGoogleImageModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
