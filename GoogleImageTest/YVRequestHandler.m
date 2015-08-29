@@ -21,10 +21,11 @@
 - (void)getDataFromURLString:(NSString *)URLString forViewController:(UIViewController *)controller completion:(YVRequestHandlerCompletion)completion
 {
     NSAssert(URLString != nil, @"URL can't be nil!");
+    NSString *encodedString = [URLString stringByRemovingPercentEncoding];
     if (controller) [MBProgressHUD showHUDAddedTo:controller.view animated:YES];
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     [manager.requestSerializer setCachePolicy:NSURLRequestReloadIgnoringLocalCacheData];
-    self.requestOperation = [manager GET:URLString parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject)
+    self.requestOperation = [manager GET:encodedString parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject)
     {
         if (controller) [MBProgressHUD hideAllHUDsForView:controller.view animated:YES];
         if (completion) completion(responseObject);
