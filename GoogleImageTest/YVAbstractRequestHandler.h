@@ -10,7 +10,7 @@
 #import <AFNetworking/AFNetworking.h>
 
 /** Completion block for HTTP request operation */
-typedef void(^YVRequestHandlerCompletion)(NSDictionary *loadedData);
+typedef void(^YVRequestHandlerCompletion)(NSDictionary *loadedData, NSError *error);
 
 /** Abstract request handler */
 @protocol YVAbstractRequestHandler <NSObject>

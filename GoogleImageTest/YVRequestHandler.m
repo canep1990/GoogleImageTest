@@ -28,13 +28,13 @@
     self.requestOperation = [manager GET:encodedString parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject)
     {
         if (controller) [MBProgressHUD hideAllHUDsForView:controller.view animated:YES];
-        if (completion) completion(responseObject);
+        if (completion) completion(responseObject, nil);
     } failure:^(AFHTTPRequestOperation *operation, NSError *error)
     {
         if (controller)
         {
             [MBProgressHUD hideAllHUDsForView:controller.view animated:YES];
-            // show error message
+            if (completion) completion(nil, error);
         }
     }];
 }

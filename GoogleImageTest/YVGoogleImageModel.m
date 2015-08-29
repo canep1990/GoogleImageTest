@@ -7,7 +7,23 @@
 //
 
 #import "YVGoogleImageModel.h"
+#import "NSDictionary+ContainsKey.h"
+
+static NSString * const kURLJSONKey = @"tbUrl";
+static NSString * const kTitleJSONKey = @"title";
 
 @implementation YVGoogleImageModel
+
+- (instancetype)initWithDictionary:(NSDictionary *)dictionary
+{
+    if (self = [super init])
+    {
+        if ([dictionary containsKey:kURLJSONKey])
+            self.imageURLString = [dictionary objectForKey:kURLJSONKey];
+        if ([dictionary containsKey:kTitleJSONKey])
+            self.title = [dictionary objectForKey:kTitleJSONKey];
+    }
+    return self;
+}
 
 @end

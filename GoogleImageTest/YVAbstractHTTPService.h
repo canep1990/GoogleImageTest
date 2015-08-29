@@ -9,7 +9,7 @@
 #import "YVAbstractRequestHandler.h"
 #import "YVAbstractParser.h"
 
-typedef void(^YVServiceCompletion)(NSArray *loadedObjects);
+typedef void(^YVServiceCompletion)(NSArray *loadedObjects, NSError *error);
 
 /** Abstract http service */
 @protocol YVAbstractHTTPService <NSObject>

@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-typedef void(^YVParserCompletion)(NSArray *parsedObjects);
+typedef void(^YVParserCompletion)(NSArray *parsedObjects, NSError *error);
 
 /** Abstract parser */
 @protocol YVAbstractParser <NSObject>

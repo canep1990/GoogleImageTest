@@ -9,3 +9,8 @@
 #import <Foundation/Foundation.h>
 
 FOUNDATION_EXTERN NSString * const YVGoogleImageAPIBaseURLString;
+FOUNDATION_EXTERN NSString * const YVParserErrorDomain;
+
+enum {
+    YVNoItemsFoundJSONError = 1000
+};

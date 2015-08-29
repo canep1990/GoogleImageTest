@@ -9,3 +9,4 @@
 #import "YVConstants.h"
 
 NSString * const YVGoogleImageAPIBaseURLString = @"https://ajax.googleapis.com/ajax/services/search/images?v=1.0&q=";
+NSString * const YVParserErrorDomain = @"com.yv.parser";

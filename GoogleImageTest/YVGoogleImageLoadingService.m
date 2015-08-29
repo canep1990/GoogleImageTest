@@ -32,7 +32,19 @@
 
 - (void)loadDataFromURLString:(NSString *)URLString forViewController:(UIViewController *)controller completion:(YVServiceCompletion)completion
 {
-    
+    __weak YVGoogleImageLoadingService *weakSelf = self;
+    [self.requestHandler getDataFromURLString:URLString forViewController:controller completion:^(NSDictionary *loadedData, NSError *requestError) {
+        if (!requestError)
+        {
+            
+        }
+        else
+        {
+            [weakSelf.parser parseResponse:loadedData completion:^(NSArray *parsedObjects, NSError *parseError) {
+                if (completion) completion(parsedObjects, parseError);
+            }];
+        }
+    }];
 }
 
 @end
