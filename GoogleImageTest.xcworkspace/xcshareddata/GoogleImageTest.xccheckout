@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>FB9FE9E9-3B0F-4865-A350-FC54676E704C</string>
+	<key>IDESourceControlProjectName</key>
+	<string>GoogleImageTest</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>D0317431EE8B81047ACEFEEF95564EEBBC10EDF5</key>
+		<string>https://github.com/canep1990/GoogleImageTest</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>GoogleImageTest.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>D0317431EE8B81047ACEFEEF95564EEBBC10EDF5</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/canep1990/GoogleImageTest</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D0317431EE8B81047ACEFEEF95564EEBBC10EDF5</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D0317431EE8B81047ACEFEEF95564EEBBC10EDF5</string>
+			<key>IDESourceControlWCCName</key>
+			<string>GoogleImageTest</string>
+		</dict>
+	</array>
+</dict>
+</plist>

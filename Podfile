@@ -3,6 +3,10 @@
 
 target 'GoogleImageTest' do
 
+pod 'AFNetworking'
+pod 'MBProgressHUD'
+pod 'OpenCV'
+
 end
 
 target 'GoogleImageTestTests' do
