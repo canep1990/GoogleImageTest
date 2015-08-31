@@ -7,6 +7,7 @@
 //
 
 #import "YVImageDisplayViewController.h"
+#import "UIViewController+viewDelegateAdditions.h"
 
 @interface YVImageDisplayViewController ()
 
