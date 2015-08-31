@@ -9,7 +9,7 @@
 #import "YVImageDisplayView.h"
 #import "YVConstants.h"
 #import "YVImageCollectionCell.h"
-#import "YVCollectionViewAdapter.h"
+#import "YVGoogleImagesCollectionViewAdapter.h"
 
 CGFloat const kItemSize = 70;
 CGFloat const kStandardInsetValue = 10;
@@ -17,7 +17,7 @@ CGFloat const kStandardInsetValue = 10;
 @interface YVImageDisplayView()
 
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
-@property (strong, nonatomic) IBOutlet YVCollectionViewAdapter *collectionViewAdapter;
+@property (strong, nonatomic) IBOutlet YVGoogleImagesCollectionViewAdapter *collectionViewAdapter;
 
 @end
 

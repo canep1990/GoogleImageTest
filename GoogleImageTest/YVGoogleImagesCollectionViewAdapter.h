@@ -8,8 +8,10 @@
 
 @import UIKit;
 
-@interface YVCollectionViewAdapter : NSObject
+/** Adapter for collection view */
+@interface YVGoogleImagesCollectionViewAdapter : NSObject
 
+/** Array of loaded objects */
 @property (copy, nonatomic) NSArray *loadedObjects;
 
 @end

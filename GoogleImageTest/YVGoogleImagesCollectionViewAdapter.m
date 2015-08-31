@@ -6,15 +6,15 @@
 //  Copyright (c) 2015 Юрий Воскресенский. All rights reserved.
 //
 
-#import "YVCollectionViewAdapter.h"
+#import "YVGoogleImagesCollectionViewAdapter.h"
 #import "YVConstants.h"
 #import "YVImageCollectionCell.h"
 
-@interface YVCollectionViewAdapter() <UICollectionViewDelegate, UICollectionViewDataSource>
+@interface YVGoogleImagesCollectionViewAdapter () <UICollectionViewDelegate, UICollectionViewDataSource>
 
 @end
 
-@implementation YVCollectionViewAdapter
+@implementation YVGoogleImagesCollectionViewAdapter
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
 {

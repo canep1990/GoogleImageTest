@@ -23,7 +23,7 @@
 		EF411CA31B93F10900E14173 /* YVImageDisplayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF411CA21B93F10900E14173 /* YVImageDisplayView.xib */; };
 		EF411CA61B93F15200E14173 /* YVImageSearchView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF411CA51B93F15200E14173 /* YVImageSearchView.m */; };
 		EF411CA81B93F16A00E14173 /* YVImageSearchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF411CA71B93F16A00E14173 /* YVImageSearchView.xib */; };
-		EF411CAB1B93F36A00E14173 /* YVCollectionViewAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = EF411CAA1B93F36A00E14173 /* YVCollectionViewAdapter.m */; };
+		EF411CAB1B93F36A00E14173 /* YVGoogleImagesCollectionViewAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = EF411CAA1B93F36A00E14173 /* YVGoogleImagesCollectionViewAdapter.m */; };
 		EF411CB11B93F92100E14173 /* YVImageCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EF411CB01B93F92000E14173 /* YVImageCollectionCell.m */; };
 		EF411CB61B93FA4900E14173 /* YVImageCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF411CB41B93FA4900E14173 /* YVImageCollectionCell.xib */; };
 		EFC029531B91CBD40029B671 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EFC029521B91CBD40029B671 /* main.m */; };
@@ -78,8 +78,8 @@
 		EF411CA41B93F15200E14173 /* YVImageSearchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YVImageSearchView.h; sourceTree = "<group>"; };
 		EF411CA51B93F15200E14173 /* YVImageSearchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YVImageSearchView.m; sourceTree = "<group>"; };
 		EF411CA71B93F16A00E14173 /* YVImageSearchView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YVImageSearchView.xib; sourceTree = "<group>"; };
-		EF411CA91B93F36A00E14173 /* YVCollectionViewAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YVCollectionViewAdapter.h; sourceTree = "<group>"; };
-		EF411CAA1B93F36A00E14173 /* YVCollectionViewAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YVCollectionViewAdapter.m; sourceTree = "<group>"; };
+		EF411CA91B93F36A00E14173 /* YVGoogleImagesCollectionViewAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YVGoogleImagesCollectionViewAdapter.h; sourceTree = "<group>"; };
+		EF411CAA1B93F36A00E14173 /* YVGoogleImagesCollectionViewAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YVGoogleImagesCollectionViewAdapter.m; sourceTree = "<group>"; };
 		EF411CAF1B93F92000E14173 /* YVImageCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YVImageCollectionCell.h; sourceTree = "<group>"; };
 		EF411CB01B93F92000E14173 /* YVImageCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YVImageCollectionCell.m; sourceTree = "<group>"; };
 		EF411CB41B93FA4900E14173 /* YVImageCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YVImageCollectionCell.xib; sourceTree = "<group>"; };
@@ -203,8 +203,8 @@
 		EF411CAC1B93F36F00E14173 /* Adapters */ = {
 			isa = PBXGroup;
 			children = (
-				EF411CA91B93F36A00E14173 /* YVCollectionViewAdapter.h */,
-				EF411CAA1B93F36A00E14173 /* YVCollectionViewAdapter.m */,
+				EF411CA91B93F36A00E14173 /* YVGoogleImagesCollectionViewAdapter.h */,
+				EF411CAA1B93F36A00E14173 /* YVGoogleImagesCollectionViewAdapter.m */,
 			);
 			name = Adapters;
 			sourceTree = "<group>";
@@ -495,7 +495,7 @@
 				EF411CA11B93F0FA00E14173 /* YVImageDisplayView.m in Sources */,
 				EF411C921B93EAEA00E14173 /* YVImageDisplayViewController.m in Sources */,
 				EF411C7E1B91D81500E14173 /* YVGoogleImageLoadingService.m in Sources */,
-				EF411CAB1B93F36A00E14173 /* YVCollectionViewAdapter.m in Sources */,
+				EF411CAB1B93F36A00E14173 /* YVGoogleImagesCollectionViewAdapter.m in Sources */,
 				EF411CB11B93F92100E14173 /* YVImageCollectionCell.m in Sources */,
 				EF411CA61B93F15200E14173 /* YVImageSearchView.m in Sources */,
 				EFC029531B91CBD40029B671 /* main.m in Sources */,

@@ -9,8 +9,10 @@
 #import <UIKit/UIKit.h>
 #import "YVGoogleImageModel.h"
 
+/** Custom collection cell with images */
 @interface YVImageCollectionCell : UICollectionViewCell
 
+/** Method for configuring view */
 - (void)configureCell:(YVGoogleImageModel *)model;
 
 @end
