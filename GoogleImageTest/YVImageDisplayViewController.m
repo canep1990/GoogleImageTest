@@ -7,7 +7,7 @@
 //
 
 #import "YVImageDisplayViewController.h"
-#import "UIViewController+viewDelegateAdditions.h"
+#import "YVImageDisplayView.h"
 
 @interface YVImageDisplayViewController ()
 
@@ -15,5 +15,10 @@
 
 @implementation YVImageDisplayViewController
 
+- (void)loadView
+{
+    YVImageDisplayView *view = [[YVImageDisplayView alloc] init];
+    self.view = view;
+}
 
 @end

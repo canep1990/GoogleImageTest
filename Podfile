@@ -5,7 +5,7 @@ target 'GoogleImageTest' do
 
 pod 'AFNetworking'
 pod 'MBProgressHUD'
-pod 'OpenCV'
+pod 'OpenCV', '2.4.9'
 
 end
 

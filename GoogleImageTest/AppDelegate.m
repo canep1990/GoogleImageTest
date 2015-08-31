@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "YVImageSearchViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,15 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    // create window and load our view controller
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor = [UIColor whiteColor];
+    
+    YVImageSearchViewController *mainController = [[YVImageSearchViewController alloc] init];
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:mainController];
+    self.window.rootViewController = navigationController;
+    
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
