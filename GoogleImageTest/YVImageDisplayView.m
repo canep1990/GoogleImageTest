@@ -11,7 +11,7 @@
 #import "YVImageCollectionCell.h"
 #import "YVGoogleImagesCollectionViewAdapter.h"
 
-CGFloat const kItemSize = 70;
+CGFloat const kItemSize = 65;
 CGFloat const kStandardInsetValue = 10;
 
 @interface YVImageDisplayView()

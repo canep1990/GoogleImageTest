@@ -11,7 +11,9 @@
 
 @interface UIImage (OpenCV)
 
+/** Create opencv image from uiimage */
 + (IplImage *)IplImageFromUIImage:(UIImage *)image;
+/** Create uiimage from opencv image */
 + (UIImage *)UIImageFromIplImage:(IplImage *)image;
 
 @end

@@ -38,7 +38,8 @@
     return ret;
 }
 
-+ (UIImage*)UIImageFromIplImage:(IplImage*)image {
++ (UIImage*)UIImageFromIplImage:(IplImage*)image
+{
     CGColorSpaceRef colorSpace;
     if (image->nChannels == 1) {
         colorSpace = CGColorSpaceCreateDeviceGray();

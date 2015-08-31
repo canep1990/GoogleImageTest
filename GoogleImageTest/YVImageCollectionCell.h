@@ -12,7 +12,7 @@
 /** Custom collection cell with images */
 @interface YVImageCollectionCell : UICollectionViewCell
 
-/** Method for configuring view */
+/** Method for configuring cell */
 - (void)configureCell:(YVGoogleImageModel *)model;
 
 @end

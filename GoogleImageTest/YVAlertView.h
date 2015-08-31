@@ -11,6 +11,7 @@
 /** Protocol for handling alert actions */
 @protocol YVAlertViewDelegate <NSObject>
 
+/** Handle button actions */
 - (void)didTapButtonAtIndex:(NSUInteger)index;
 
 @end
