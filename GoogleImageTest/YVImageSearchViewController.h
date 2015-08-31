@@ -9,6 +9,7 @@
 @import UIKit;
 #import "UIViewController+viewDelegateAdditions.h"
 
+/** Controller for searching images */
 @interface YVImageSearchViewController : UIViewController
 
 @end

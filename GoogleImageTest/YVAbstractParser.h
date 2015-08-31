@@ -13,7 +13,7 @@ typedef void(^YVParserCompletion)(NSArray *parsedObjects, NSError *error);
 /** Abstract parser */
 @protocol YVAbstractParser <NSObject>
 
-/** Parse respinse with completion */
+/** Parse response with completion */
 - (void)parseResponse:(NSDictionary *)response completion:(YVParserCompletion)completion;
 
 @end

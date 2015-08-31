@@ -8,12 +8,15 @@
 
 #import "YVBaseView.h"
 
+/** Delegate protocol for loading data from search string */
 @protocol YVImageSearchViewDelegate <YVBaseViewDelegate>
 
+/** Search for google image with query string */
 - (void)searchGoogleImagesForString:(NSString *)string;
 
 @end
 
+/** View for searching the images */
 @interface YVImageSearchView : YVBaseView
 
 @end

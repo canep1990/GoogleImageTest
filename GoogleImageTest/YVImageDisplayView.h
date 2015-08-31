@@ -9,6 +9,7 @@
 #import "YVBaseView.h"
 #import "YVImageDisplayViewController.h"
 
+/** View for displaying image in a grid */
 @interface YVImageDisplayView : YVBaseView <YVImageDisplayViewControllerDelegate>
 
 @end

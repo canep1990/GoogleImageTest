@@ -14,6 +14,7 @@
 @property (copy, nonatomic) NSString *title;
 @property (copy, nonatomic) NSString *imageURLString;
 
+/** Create object from dictionary */
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary;
 
 @end
