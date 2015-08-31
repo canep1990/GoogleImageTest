@@ -339,10 +339,10 @@
 			isa = PBXGroup;
 			children = (
 				EF411C9A1B93EFEC00E14173 /* ViewControllerAdditions */,
-				EF411C901B93EAEA00E14173 /* YVImageDisplayViewController.h */,
-				EF411C911B93EAEA00E14173 /* YVImageDisplayViewController.m */,
 				EF411C8D1B93EAD000E14173 /* YVImageSearchViewController.h */,
 				EF411C8E1B93EAD000E14173 /* YVImageSearchViewController.m */,
+				EF411C901B93EAEA00E14173 /* YVImageDisplayViewController.h */,
+				EF411C911B93EAEA00E14173 /* YVImageDisplayViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";

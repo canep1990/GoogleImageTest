@@ -12,6 +12,7 @@
 #import "YVConstants.h"
 #import "YVGoogleImageLoadingService.h"
 #import "YVAbstractHTTPService.h"
+#import "YVImageDisplayViewController.h"
 
 @interface YVImageSearchViewController() <YVImageSearchViewDelegate>
 
@@ -50,7 +51,9 @@
         [self.httpService loadDataFromURLString:[NSString stringWithFormat:@"%@%@", YVGoogleImageAPIBaseURLString, string] forViewController:self completion:^(NSArray *loadedObjects, NSError *error) {
             if (!error)
             {
-                
+                YVImageDisplayViewController *imageDisplayController = [[YVImageDisplayViewController alloc] init];
+                imageDisplayController.loadedModels = loadedObjects;
+                [weakSelf.navigationController pushViewController:imageDisplayController animated:YES];
             }
             else
             {

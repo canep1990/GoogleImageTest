@@ -18,7 +18,17 @@
 - (void)loadView
 {
     YVImageDisplayView *view = [[YVImageDisplayView alloc] init];
+    self.viewDelegate = view;
     self.view = view;
+}
+
+- (void)viewDidLoad
+{
+    if (self.viewDelegate)
+    {
+        id <YVImageDisplayViewControllerDelegate> delegate = (id <YVImageDisplayViewControllerDelegate>)self.viewDelegate;
+        [delegate configureView:self.loadedModels];
+    }
 }
 
 @end

@@ -34,6 +34,7 @@
             </constraints>
             <connections>
                 <outlet property="collectionView" destination="ZeJ-2q-6p8" id="xrx-rg-h5I"/>
+                <outlet property="collectionViewAdapter" destination="qZ7-fw-gVe" id="eiV-fO-Ups"/>
             </connections>
         </view>
         <customObject id="qZ7-fw-gVe" customClass="YVCollectionViewAdapter"/>
