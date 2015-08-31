@@ -36,13 +36,13 @@
     [self.requestHandler getDataFromURLString:URLString forViewController:controller completion:^(NSDictionary *loadedData, NSError *requestError) {
         if (!requestError)
         {
-            
-        }
-        else
-        {
             [weakSelf.parser parseResponse:loadedData completion:^(NSArray *parsedObjects, NSError *parseError) {
                 if (completion) completion(parsedObjects, parseError);
             }];
+        }
+        else
+        {
+            if (completion) completion(nil, requestError);
         }
     }];
 }

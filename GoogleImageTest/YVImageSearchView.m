@@ -18,6 +18,7 @@
 
 - (IBAction)loadDataForText:(id)sender
 {
+    [self.textField resignFirstResponder];
     id <YVImageSearchViewDelegate> delegate = (id <YVImageSearchViewDelegate>)self.delegate;
     if (delegate)
     {

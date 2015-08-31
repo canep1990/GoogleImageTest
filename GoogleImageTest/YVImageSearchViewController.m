@@ -37,6 +37,8 @@
 - (void)viewDidLoad
 {
     self.httpService = [[YVGoogleImageLoadingService alloc] init];
+    self.navigationController.navigationBar.translucent = NO;
+    self.edgesForExtendedLayout = UIRectEdgeNone;
 }
 
 #pragma mark - YVImageSearchViewDelegate
@@ -46,7 +48,7 @@
     if (string.length > 0)
     {
         __weak YVImageSearchViewController *weakSelf = self;
-        [self.httpService loadDataFromURLString:[NSString stringWithFormat:YVGoogleImageAPIBaseURLString, string] forViewController:self completion:^(NSArray *loadedObjects, NSError *error) {
+        [self.httpService loadDataFromURLString:[NSString stringWithFormat:@"%@%@", YVGoogleImageAPIBaseURLString, string] forViewController:self completion:^(NSArray *loadedObjects, NSError *error) {
             if (!error)
             {
                 NSLog(@"loadedObjects: %@", loadedObjects);
@@ -54,12 +56,14 @@
             else
             {
                 weakSelf.alertView = [[YVAlertView alloc] initWithTitle:@"Error" message:error.localizedDescription delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil controller:self];
+                [weakSelf.alertView show];
             }
         }];
     }
     else
     {
         self.alertView = [[YVAlertView alloc] initWithTitle:@"Error" message:@"Text field is empty" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil controller:self];
+        [self.alertView show];
     }
 }
 

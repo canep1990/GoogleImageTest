@@ -22,6 +22,7 @@
 {
     NSAssert(URLString != nil, @"URL can't be nil!");
     NSString *encodedString = [URLString stringByRemovingPercentEncoding];
+    NSLog(@"encoded url: %@", encodedString);
     if (controller) [MBProgressHUD showHUDAddedTo:controller.view animated:YES];
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     [manager.requestSerializer setCachePolicy:NSURLRequestReloadIgnoringLocalCacheData];

@@ -22,7 +22,9 @@ static NSString * const kJSONErrorString = @"No images found!";
     if ([response containsKey:kResponseDataJSONKey])
     {
         NSDictionary *responseData = [response objectForKey:kResponseDataJSONKey];
-        if ([response containsKey:kResultsDataJSONKey]) {
+        NSLog(@"responseData: %@", responseData);
+        if ([responseData containsKey:kResultsDataJSONKey])
+        {
             NSArray *jsonResults = [responseData objectForKey:kResultsDataJSONKey];
             if (jsonResults && jsonResults.count > 0)
             {
@@ -36,18 +38,21 @@ static NSString * const kJSONErrorString = @"No images found!";
             }
             else
             {
+                NSLog(@"jsonResults");
                 NSError *error = [NSError errorWithDomain:YVParserErrorDomain code:YVNoItemsFoundJSONError userInfo:@{NSLocalizedDescriptionKey: kJSONErrorString}];
                 if (completion) completion(nil, error);
             }
         }
         else
         {
+            NSLog(@"containsKey:kResultsDataJSONKey");
             NSError *error = [NSError errorWithDomain:YVParserErrorDomain code:YVNoItemsFoundJSONError userInfo:@{NSLocalizedDescriptionKey: kJSONErrorString}];
             if (completion) completion(nil, error);
         }
     }
     else
     {
+        NSLog(@"containsKey:kResponseDataJSONKey");
         NSError *error = [NSError errorWithDomain:YVParserErrorDomain code:YVNoItemsFoundJSONError userInfo:@{NSLocalizedDescriptionKey: kJSONErrorString}];
         if (completion) completion(nil, error);
     }
