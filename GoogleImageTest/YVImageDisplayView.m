@@ -11,6 +11,9 @@
 #import "YVImageCollectionCell.h"
 #import "YVCollectionViewAdapter.h"
 
+CGFloat const kItemSize = 70;
+CGFloat const kStandardInsetValue = 10;
+
 @interface YVImageDisplayView()
 
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
@@ -23,6 +26,11 @@
 - (void)awakeFromNib
 {
     [self.collectionView registerNib:[UINib nibWithNibName:NSStringFromClass([YVImageCollectionCell class]) bundle:nil] forCellWithReuseIdentifier:YVImageCollectionCellReuseIdentifier];
+    UICollectionViewFlowLayout *layout = [UICollectionViewFlowLayout new];
+    layout.itemSize = CGSizeMake(kItemSize, kItemSize);
+    layout.sectionInset = UIEdgeInsetsMake(kStandardInsetValue, kStandardInsetValue, kStandardInsetValue, kStandardInsetValue);
+    self.collectionView.backgroundColor = [UIColor clearColor];
+    [self.collectionView setCollectionViewLayout:layout];
 }
 
 - (void)configureView:(NSArray *)loadedModels

@@ -21,7 +21,7 @@
 - (void)getDataFromURLString:(NSString *)URLString forViewController:(UIViewController *)controller completion:(YVRequestHandlerCompletion)completion
 {
     NSAssert(URLString != nil, @"URL can't be nil!");
-    NSString *encodedString = [URLString stringByRemovingPercentEncoding];
+    NSString *encodedString = [URLString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     NSLog(@"encoded url: %@", encodedString);
     if (controller) [MBProgressHUD showHUDAddedTo:controller.view animated:YES];
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];

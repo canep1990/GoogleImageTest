@@ -24,6 +24,7 @@
 
 - (void)viewDidLoad
 {
+    self.title = NSLocalizedString(@"Images", nil);
     if (self.viewDelegate)
     {
         id <YVImageDisplayViewControllerDelegate> delegate = (id <YVImageDisplayViewControllerDelegate>)self.viewDelegate;

@@ -38,6 +38,7 @@
 - (void)viewDidLoad
 {
     self.httpService = [[YVGoogleImageLoadingService alloc] init];
+    self.title = NSLocalizedString(@"Search Images", nil);
     self.edgesForExtendedLayout = UIRectEdgeNone;
 }
 
