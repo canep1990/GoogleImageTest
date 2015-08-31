@@ -38,21 +38,18 @@ static NSString * const kJSONErrorString = @"No images found!";
             }
             else
             {
-                NSLog(@"jsonResults");
                 NSError *error = [NSError errorWithDomain:YVParserErrorDomain code:YVNoItemsFoundJSONError userInfo:@{NSLocalizedDescriptionKey: kJSONErrorString}];
                 if (completion) completion(nil, error);
             }
         }
         else
         {
-            NSLog(@"containsKey:kResultsDataJSONKey");
             NSError *error = [NSError errorWithDomain:YVParserErrorDomain code:YVNoItemsFoundJSONError userInfo:@{NSLocalizedDescriptionKey: kJSONErrorString}];
             if (completion) completion(nil, error);
         }
     }
     else
     {
-        NSLog(@"containsKey:kResponseDataJSONKey");
         NSError *error = [NSError errorWithDomain:YVParserErrorDomain code:YVNoItemsFoundJSONError userInfo:@{NSLocalizedDescriptionKey: kJSONErrorString}];
         if (completion) completion(nil, error);
     }

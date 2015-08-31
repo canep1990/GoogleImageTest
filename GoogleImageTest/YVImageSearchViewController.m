@@ -37,7 +37,6 @@
 - (void)viewDidLoad
 {
     self.httpService = [[YVGoogleImageLoadingService alloc] init];
-    self.navigationController.navigationBar.translucent = NO;
     self.edgesForExtendedLayout = UIRectEdgeNone;
 }
 
@@ -51,7 +50,7 @@
         [self.httpService loadDataFromURLString:[NSString stringWithFormat:@"%@%@", YVGoogleImageAPIBaseURLString, string] forViewController:self completion:^(NSArray *loadedObjects, NSError *error) {
             if (!error)
             {
-                NSLog(@"loadedObjects: %@", loadedObjects);
+                
             }
             else
             {
