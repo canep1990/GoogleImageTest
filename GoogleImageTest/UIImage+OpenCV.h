@@ -11,7 +11,7 @@
 
 @interface UIImage (OpenCV)
 
-+ (IplImage*)IplImageFromUIImage:(UIImage*)image;
-+ (UIImage*)UIImageFromIplImage:(IplImage*)image;
++ (IplImage *)IplImageFromUIImage:(UIImage *)image;
++ (UIImage *)UIImageFromIplImage:(IplImage *)image;
 
 @end
