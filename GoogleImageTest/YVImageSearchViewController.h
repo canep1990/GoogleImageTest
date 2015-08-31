@@ -7,6 +7,11 @@
 //
 
 @import UIKit;
+#import "UIViewController+viewDelegateAdditions.h"
+
+@protocol YVImageSearchViewControllerDelegate <YVViewControllerDelegate>
+
+@end
 
 @interface YVImageSearchViewController : UIViewController
 

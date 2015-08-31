@@ -10,6 +10,7 @@
 
 FOUNDATION_EXTERN NSString * const YVGoogleImageAPIBaseURLString;
 FOUNDATION_EXTERN NSString * const YVParserErrorDomain;
+FOUNDATION_EXTERN NSString * const YVImageCollectionCellReuseIdentifier;
 
 enum {
     YVNoItemsFoundJSONError = 1000

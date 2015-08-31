@@ -1,5 +1,5 @@
 //
-//  YVImageDisplayViewController.h
+//  YVImageCollectionCell.h
 //  GoogleImageTest
 //
 //  Created by Юрий Воскресенский on 31.08.15.
@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "UIViewController+viewDelegateAdditions.h"
+#import "YVGoogleImageModel.h"
 
-@interface YVImageDisplayViewController : UIViewController
+@interface YVImageCollectionCell : UICollectionViewCell
+
+- (void)configureCell:(YVGoogleImageModel *)model;
 
 @end

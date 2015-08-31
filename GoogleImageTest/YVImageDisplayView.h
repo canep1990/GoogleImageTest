@@ -8,6 +8,12 @@
 
 #import "YVBaseView.h"
 
+@protocol YVImageDisplayViewDelegate <YVBaseViewDelegate>
+
+- (void)configureView:(NSArray *)objects;
+
+@end
+
 @interface YVImageDisplayView : YVBaseView
 
 @end

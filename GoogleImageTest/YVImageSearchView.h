@@ -8,6 +8,12 @@
 
 #import "YVBaseView.h"
 
+@protocol YVImageSearchViewDelegate <YVBaseViewDelegate>
+
+- (void)searchGoogleImagesForString:(NSString *)string;
+
+@end
+
 @interface YVImageSearchView : YVBaseView
 
 @end

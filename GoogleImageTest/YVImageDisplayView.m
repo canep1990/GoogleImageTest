@@ -7,8 +7,20 @@
 //
 
 #import "YVImageDisplayView.h"
+#import "YVConstants.h"
+#import "YVImageCollectionCell.h"
+
+@interface YVImageDisplayView()
+
+@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
+
+@end
 
 @implementation YVImageDisplayView
 
+- (void)awakeFromNib
+{
+    [self.collectionView registerNib:[UINib nibWithNibName:NSStringFromClass([YVImageCollectionCell class]) bundle:nil] forCellWithReuseIdentifier:YVImageCollectionCellReuseIdentifier];
+}
 
 @end
